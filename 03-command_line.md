@@ -12,17 +12,17 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > mkdir - creates a directory
-rmdir - removes a directory
-mv - can rename a file of the same type
-touch - creates an empty file
-less - views a file's contents page by page
-stream - views a file's contents
-> - takes output from the left and writes it to the file on the right
->> - takes output from the left and appends it to the file on the right
-grep x y - searches for a string x in a file y
-export - creates an enviornment variable
-unset - removes an enviornment variable
+>> mkdir - creates a directory<br />
+rmdir - removes a directory<br />
+mv - can rename a file of the same type<br />
+touch - creates an empty file<br />
+less - views a file's contents page by page<br />
+stream - views a file's contents<br />
+\> - takes output from the left and writes it to the file on the right<br />
+\>> - takes output from the left and appends it to the file on the right<br />
+grep x y - searches for a string x in a file y<br />
+export - creates an enviornment variable<br />
+unset - removes an enviornment variable<br />
 
 ---
 
