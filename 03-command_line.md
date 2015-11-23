@@ -31,7 +31,11 @@ unset - removes an enviornment variable<br />
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls` lists files in a directory<br />
+`ls -a` lists all files including ones beginning with "."<br />
+`ls -l` lists files with details and bytes
+`ls -lh` lists files with details and kilobytes
+By using `ls -a -l` you can list all files including those beginning with "." and their details
 
 ---
 
