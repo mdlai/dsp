@@ -44,7 +44,8 @@ By using `ls -a -l` you can list all files including those beginning with "." an
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs takes the arguments in a list and executes another command on all those arguments. <br />
+`ls | xargs ls` will list all the objects in each folder of the original folder
 
 ---
 
