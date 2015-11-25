@@ -41,14 +41,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehensions are like creating sets in mathematics.  In mathematics someone could write `S = {0*0, 1*1, 2*2, ... 9*9}` and the equivalent list comprehension would be `[x**2 for x in range(0,10)]`. <br/>
-
-Using map it would equivalently be map(lambda x:x**2, range(0,10)).  Maps seem better for iterating multiple lists simultaneously for example `map(lambda x,y: x+y, [1,2,3],[4,5,6])` could be written as [[1,2,3][j]+[4,5,6][j] for j in range(0,3)] <br/>
-
-`filter(lambda x: x > 2, range(0,5))` is equivalent to `[x for x in range(0,5) if x > 2]`  Filter and lambda seem identical.<br/>
-
-set comprehension: `{x for x in range(0,10)}`<br/>
-dictionary comprehension: `{x:y for (x,y) in enumerate(range(1,11))}`
+>> List comprehensions are like creating sets in mathematics.  In mathematics someone could write `S = {0*0, 1*1, 2*2, ... 9*9}` and the equivalent list comprehension would be `[x**2 for x in range(0,10)]`. <br/>Using map it would equivalently be `map(lambda x:x**2, range(0,10))`.  <br/><br/>Maps seem better for iterating multiple lists simultaneously for example `map(lambda x,y: x+y, [1,2,3],[4,5,6])` could be written as `[[1,2,3][j]+[4,5,6][j] for j in range(0,3)]` <br/><br/>`filter(lambda x: x > 2, range(0,5))` is equivalent to `[x for x in range(0,5) if x > 2]`  Filter and lambda seem identical.<br/><br/>set comprehension: `{x for x in range(0,10)}`<br/>dictionary comprehension: `{x:y for (x,y) in enumerate(range(1,11))}`
 
 
 
