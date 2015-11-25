@@ -22,9 +22,9 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Lists and sets are both sequence of values.  A list is different from a set because it can have multiple repeating values.  The list also preserves order.  The performance of a set is better for finding an element because it uses as hashtable.  This allows an element in a set to have a known location based on its value.<br/>
 `a = [1,2,3,4,3]`
-set: `set(a)
+set: `set(a) -->
 set([1,2,3,4])`
-list: `list(a)
+list: `list(a) -->
 [1,2,3,4,3]`
 
 ---
