@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        return 'Number of donuts: %i' %(count)
+    elif count >=10:
+        return 'Number of donuts: many'
 
 
 def both_ends(s):
@@ -37,7 +40,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return ''
+    else:
+        return s[:2] + s[len(s)-2:]
 
 
 def fix_start(s):
@@ -56,7 +62,16 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    start_char = s[0]
+    temp_word = list(s)
+
+    for count,value in enumerate(temp_word[1:],1):
+        if value == start_char:
+            temp_word[count] = '*'
+
+    temp_word = ''.join(temp_word)
+
+    return temp_word
 
 
 def mix_up(a, b):
@@ -74,7 +89,12 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    a_first = a[:2]
+    a_rest = a[2:]
+    b_first = b[:2]
+    b_rest = b[2:]
+
+    return '%s%s %s%s' %(b_first,a_rest,a_first,b_rest)
 
 
 def verbing(s):
@@ -91,7 +111,12 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) > 2:
+        if s[len(s)-3:] == 'ing':
+            s = s+'ly'
+        else:
+            s = s+'ing'
+    return s
 
 
 def not_bad(s):
@@ -111,7 +136,23 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    s = list(s)
+    start_not = 0
+    end_bad = 0
+    for count,value in enumerate(s):
+        if value == 'n':
+            if s[count+1] == 'o' and s[count+2] == 't':
+                start_not = count
+        if value == 'b':
+            if s[count+1] == 'a' and s[count+2] == 'd':
+                end_bad = count+3
+
+    if start_not < end_bad:
+        s[start_not:end_bad]='good'
+    s = ''.join(s)
+
+    return s
+
 
 
 def front_back(a, b):
@@ -130,4 +171,17 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a_front = 0
+    b_front = 0
+
+    if len(a)%2 == 0:
+        a_front = len(a)/2
+    else:
+        a_front = len(a)/2 + 1
+
+    if len(b)%2 == 0:
+        b_front = len(b)/2
+    else:
+        b_front = len(b)/2 + 1
+
+    return a[:a_front] + b[:b_front] + a[a_front:] + b[b_front:]
