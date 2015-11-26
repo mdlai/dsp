@@ -154,7 +154,6 @@ def not_bad(s):
     return s
 
 
-
 def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
