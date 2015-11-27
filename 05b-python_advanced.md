@@ -19,24 +19,24 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> The number of degrees including no degree is 9.  Not including no degree is 8.
-`{('0', 1),
- ('BSEd', 1),
- ('JD', 1),
- ('MA', 1),
- ('MD', 1),
- ('MPH', 2),
- ('MS', 2),
- ('PhD', 31),
- ('ScD', 6)}`
+>> The number of degrees including no degree is 9.  Not including no degree is 8.<br/>
+{('0', 1),<br/>
+ ('BSEd', 1),<br/>
+ ('JD', 1),<br/>
+ ('MA', 1),<br/>
+ ('MD', 1),<br/>
+ ('MPH', 2),<br/>
+ ('MS', 2),<br/>
+ ('PhD', 31),<br/>
+ ('ScD', 6)}
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> The number of unique titles is 3.
-Professor              13
-Associate Professor    12
-Assistant Professor    12
+>> The number of unique titles is 3.<br/>
+Professor              13<br/>
+Associate Professor    12<br/>
+Assistant Professor    12<br/>
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
@@ -46,11 +46,11 @@ Assistant Professor    12
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
->> The number of unique email domains is 4
-mail.med.upenn.edu    23
-upenn.edu             12
-cceb.med.upenn.edu     1
-email.chop.edu         1
+>> The number of unique email domains is 4<br/>
+mail.med.upenn.edu    23<br/>
+upenn.edu             12<br/>
+cceb.med.upenn.edu     1<br/>
+email.chop.edu         1<br/>
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
