@@ -37,7 +37,7 @@ print lowheight,highheight
     177.8 185.42
 
 
-The `cdf(x)` function calculates the percentage of people from 0 to the value 'x'.  So in order to find the percentage of the population between `lowheight` and `highheight` we find the cdf of both and subtract the lower from the higher.
+The `cdf(x)` function calculates the percentage of people from 0 to the value `x`.  So in order to find the percentage of the population between `lowheight` and `highheight` we find the cdf of both and subtract the lower from the higher.
 
 
 ```python
@@ -74,3 +74,4 @@ plt.gca().add_patch(Rectangle((lowheight,my_norm.cdf(lowheight)), highheight-low
 
 ![png](output_8_1.png)
 
+To answer the original question, 34.27% of the US male population is between 5'10" and 6'1".
