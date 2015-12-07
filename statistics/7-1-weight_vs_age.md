@@ -92,7 +92,7 @@ def perc_by_age(data,perc):
     return l
 ```
 
-Here's the correct plot of the birthweight percentiles versus bins of mothers ages.  It appears here that up to a certain point, around 35 mother's ages positively correlate to birth weight.  But after 35 there is a negative correlation.
+Here's the correct plot of the birth weight percentiles versus bins of mothers ages.  It appears here that up to a certain point, around 35 mother's ages positively correlate to birth weight.  But after 35 there is a negative correlation.
 
 
 ```python
@@ -150,9 +150,9 @@ print 'Spearman\'s correlation:', spearmans(ages,weights)
     Spearman's correlation: 0.0946100410966
 
 
-Based on the pearson's and spearman's correlations the birthweight and age seem to be loosely positively linearly correlated.  Because Spearman's correlation is higher than Pearson's it suggests that the relationships between the two are related more in terms of rank than value.  <br>
+Based on the pearson's and spearman's correlations the birth weight and age seem to be loosely positively linearly correlated.  Because Spearman's correlation is higher than Pearson's it suggests that the relationships between the two are related more in terms of rank than value.  <br>
 
-While an increase in age generally equates to an increase in weight, that increase is not a constant porportion.<br>
+While an increase in age generally equates to an increase in weight, that increase is not a constant proportion.<br>
 
 Out of curiosity I separated the two groups into above 35 and under 35 and recalculated the correlations.  The results are pretty about what I expected. The correlation for before 35 improves, and the correlation for after 35 is negative.
 
