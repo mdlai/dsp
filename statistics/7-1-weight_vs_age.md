@@ -96,7 +96,6 @@ Here's the correct plot of the birth weight percentiles versus bins of mothers a
 
 
 ```python
-perc_by_age(group_weights,25)
 fig, ax = plt.subplots()
 ax.plot(group_ages,perc_by_age(group_weights,25),label='25th')
 ax.plot(group_ages,perc_by_age(group_weights,50),label='50th')
