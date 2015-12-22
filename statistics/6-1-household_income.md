@@ -40,7 +40,7 @@ def interpolate(df, log_upper = 6.0):
     return log_sample
 ```
 
-We interpolate the data using an upper bound of \$1,000,000.  Using the interpolated data, we take 10 to the values that we interpolated in order to create our sample using dollars as the unit.
+We interpolate the data using an upper bound of $1,000,000.  Using the interpolated data, we take 10 to the values that we interpolated in order to create our sample using dollars as the unit.
 
 
 ```python
@@ -160,7 +160,7 @@ plt.xlabel('household income')
 ![png](output_6_11_1.png)
 
 
-Based on the charts above we find that indeed the PDF for household income is heavily skewed with a long right tail.  The PDF for log of income implies that it is very likely to have a household income between 10^4.5 and 10^5, \$31622.77 and \$100,000.
+Based on the charts above we find that indeed the PDF for household income is heavily skewed with a long right tail.  The PDF for log of income implies that it is very likely to have a household income between 10^4.5 and 10^5, $31622.77 and $100,000.
 
 
 ```python
