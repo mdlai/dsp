@@ -143,7 +143,7 @@ est, est_cdf = sim_sample(3,1000,1000)
 
 Based on the above three graphs, we see that as n increases RMSE and SE decrease and the CI shrinks.<br>
 
-Because RMSE appears to be approaching 0 as n increases so sampling error is decreasing. I would say this method for estimation is unbaised.
+Because RMSE appears to be approaching 0 as n increases so sampling error is decreasing. I would say this method for estimation is unbiased.
 
 
 ```python
@@ -187,4 +187,4 @@ est, est_cdf = sim_sample(300,10,1000)
 ![png](output_83_13_1.png)
 
 
-It appears that as lambda increases, the mean error increases.  However, based on the three graphs above, the increase in error seems directly porportional to the increase in lambda.  The graphs are the same but scaled by multiples of 10.
+It appears that as lambda increases, the mean error increases.  However, based on the three graphs above, the increase in error seems directly proportional to the increase in lambda.  The graphs are the same but scaled by multiples of 10.
